@@ -20,9 +20,9 @@ ESLint comes with a large number of [built-in rules](../../rules/) and you can a
 
 To change a rule's severity, set the rule ID equal to one of these values:
 
-* `"off"` or `0` - turn the rule off
-* `"warn"` or `1` - turn the rule on as a warning (doesn't affect exit code)
-* `"error"` or `2` - turn the rule on as an error (exit code is 1 when triggered)
+* `"off"` or `0` - turn the rule off.
+* `"warn"` or `1` - turn the rule on as a warning (doesn't affect exit code).
+* `"error"` or `2` - turn the rule on as an error (exit code is 1 when triggered).
 
 Rules are typically set to `"error"` to enforce compliance with the rule during continuous integration testing, pre-commit checks, and pull request merging because doing so causes ESLint to exit with a non-zero exit code.
 
@@ -75,7 +75,7 @@ Configuration comments can include descriptions to explain why the comment is ne
 
 ### Using Configuration Files
 
-To configure rules inside of a configuration file, use the `rules` key along with an error level and any options you want to use. For example:
+To configure rules inside of a [configuration file](./configuration-files#configuration-file), use the `rules` key along with an error level and any options you want to use. For example:
 
 ```js
 export default [
@@ -133,7 +133,7 @@ Rules configured via configuration comments have the highest priority and are ap
 
 To configure a rule that is defined within a plugin, prefix the rule ID with the plugin namespace and `/`.
 
-In a configuration file, for example:
+In a [configuration file](./configuration-files#configuration-file), for example:
 
 ```js
 // eslint.config.js
@@ -304,7 +304,7 @@ console.log('hello');
 
 ### Using configuration files
 
-To disable rules inside of a configuration file for a group of files, use a subsequent config object with a `files` key. For example:
+To disable rules inside of a [configuration file](./configuration-files#configuration-file) for a group of files, use a subsequent config object with a `files` key. For example:
 
 ```js
 // eslint.config.js
